@@ -1,20 +1,23 @@
 * {
+    /* margin: 0 !important;
+    padding: 0 !important; */
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
 .logo {
-    width: 4rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .navbar-toggler {
     outline: none !important;
 }
 .cont {
-    background-image: url('images/bg.jpg');
+    background-image: url('/CSS/images/bg.jpg');
     background-attachment: fixed;
 }
 .pad {
-    padding-top: 100px;
+    padding-top: 100px !important;
 }
 .position {
     position: relative;
@@ -40,6 +43,7 @@
 }
 .link2 {
     width: 10%;
+    border-bottom-right-radius: 4px;
 }
 .link3 {
     background-color: rgba(0, 0, 0, 0.7);
@@ -74,39 +78,47 @@ ul li {
     .container-fluid {
         padding: 10px !important;
     }
+    .row {
+        margin: 0 !important;
+        padding: 65px 0px !important;
+    }
+    div {
+        padding: 0px !important;
+    }
+    .card-body {
+        padding: 10px !important;
+    }
     .navbar {
         padding: 0px 10px !important;
     }
-    .fadeInUp {
-        -webkit-animation-name: fadeInUp;
-        animation-name: fadeInUp;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
+    .slideInLeft {
+        -webkit-animation-name: slideInLeft;
+        animation-name: slideInLeft;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
         }
-        @-webkit-keyframes fadeInUp {
+        @-webkit-keyframes slideInLeft {
         0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
         }
         100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
         }
         }
-        @keyframes fadeInUp {
+        @keyframes slideInLeft {
         0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
         }
         100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
         }
         } 
 }
