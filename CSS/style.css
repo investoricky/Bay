@@ -1,0 +1,112 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+    width: 4rem;
+    height: 3rem;
+}
+.navbar-toggler {
+    outline: none !important;
+}
+.cont {
+    background-image: url('images/bg.jpg');
+    background-attachment: fixed;
+}
+.pad {
+    padding-top: 100px;
+}
+.position {
+    position: relative;
+}
+.absolutee {
+    position: relative;
+    width: max-content;
+    background-color: #000;
+    top: -24px;
+    font-style: italic;
+}
+.color {
+    color: #808080;
+    font-size: 12px;
+}
+.card-body hr {
+    border-top: 1px dotted #808080;
+    width: 55%;
+    margin-top: -5%;
+}
+.font {
+    font-size: 14px;
+}
+.link2 {
+    width: 10%;
+}
+.link3 {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.colo {
+    color: #858585;
+    font-size: 25px;
+}
+.col {
+    color: #858585;
+}
+.fontt {
+    font-size: 13px;
+}
+ul {
+    font-size: 13px;
+}
+ul li {
+    list-style-type: none;
+}
+.bords {
+    border-bottom: 2px solid #fff;
+}
+.bordss {
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        padding: 10px !important;
+    }
+    .navbar {
+        padding: 0px 10px !important;
+    }
+    .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes fadeInUp {
+        0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        }
+        100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        }
+        }
+        @keyframes fadeInUp {
+        0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        }
+        100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        }
+        } 
+}
